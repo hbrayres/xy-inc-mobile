@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">"Filmes IMdb "</string>
+    <string name="title_lbl">"Título"</string>
+    <string name="subtitle_lbl">"Subtitulo"</string>
+    <string name="plot_lbl">"Sinopse"</string>
+    <string name="action_settings">Settings</string>
+    <string name="novo_filme">Novo Filme</string>
+    <string name="lbl_cancel">Cancelar</string>
+    <string name="lbl_search">Buscar</string>
+    <string name="lbl_delete">Excluir</string>
+    <string name="title_activity_act_filme_detail"></string>
+</resources>

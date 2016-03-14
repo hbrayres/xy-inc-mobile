@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="@string/novo_filme"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <br.com.zup.filmesimdb.widget.ZUPEditText
+            android:id="@+id/et_title_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="24dp"
+            android:hint="@string/title_lbl"
+            android:inputType="text"
+            android:textCursorDrawable="@null"
+            android:maxLength="35"
+            android:singleLine="true"
+            style="@style/AppTheme"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:gravity="bottom|right"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom|right">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/holo_blue_light"
+            android:textStyle="bold"
+            android:text="@string/lbl_cancel"/>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/holo_blue_light"
+            android:textStyle="bold"
+            android:text="@string/lbl_search" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="128dp"
+    tools:context="br.com.zup.filmesimdb.activities.ActFilmeDetail">
+
+    <RelativeLayout
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/tv_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/title_lbl"
+            android:paddingTop="16dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="16dp"
+            android:textSize="14sp"
+            android:singleLine="true"
+            />
+
+        <ImageView
+            android:id="@+id/iv_poster"
+            android:layout_width="@dimen/width_poster_detail"
+            android:layout_height="@dimen/height_poster_detail"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_below="@+id/tv_subtitle"/>
+
+        <TextView
+            android:id="@+id/tv_director_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingEnd="8dp"
+            android:textSize="14sp"
+            android:text="@string/subtitle_lbl"
+            android:layout_toEndOf="@+id/iv_poster"
+            android:layout_below="@+id/tv_subtitle"/>
+
+        <TextView
+            android:id="@+id/tv_actors_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingEnd="8dp"
+            android:textSize="14sp"
+            android:text="@string/subtitle_lbl"
+            android:layout_toEndOf="@+id/iv_poster"
+            android:layout_below="@+id/tv_director_detail"/>
+
+        <TextView
+            android:id="@+id/tv_rated_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:paddingEnd="8dp"
+            android:text="@string/subtitle_lbl"
+            android:layout_toEndOf="@+id/iv_poster"
+            android:layout_below="@+id/tv_actors_detail"/>
+
+        <TextView
+            android:id="@+id/tv_plot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="8dp"
+            android:textSize="16sp"
+            android:text="@string/subtitle_lbl"
+            android:layout_below="@+id/iv_poster"/>
+
+</RelativeLayout>
+</ScrollView>
